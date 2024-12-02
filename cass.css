@@ -1,0 +1,233 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Fondo oscuro */
+    color: #fff;
+}
+
+/* Encabezado */
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor del logo */
+.logo-container {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Logo: rectangular y más grande */
+header .logo {
+    width: 300px; /* Tamaño más grande */
+    height: auto;
+    border-radius: 5px; /* Bordes suaves */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+/* Efecto de hover en el logo */
+header .logo:hover {
+    transform: scale(1.1);
+}
+
+/* Texto del encabezado */
+header .header-text h1 {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+header .header-text p {
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+/* Navegación */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    color: #f1c40f;
+    transform: scale(1.1);
+}
+
+/* Contenedor principal */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Sección Sobre mí */
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+.intro-text {
+    width: 60%;
+}
+
+.intro-image {
+    width: 35%;
+}
+
+.intro-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Sección de habilidades */
+#skills {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#skills h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.skill-card {
+    background-color: #333;
+    padding: 20px;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.skill-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    font-size: 16px;
+}
+
+/* Galería */
+#gallery {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#gallery h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Videos */
+#videos {
+    margin-top: 50px;
+}
+
+.video-gallery {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.video-gallery iframe {
+    width: 100%;
+    max-width: 350px;
+    height: 220px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-gallery iframe:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Divisiones entre secciones */
+.divider {
+    margin: 40px 0;
+    border: 1px solid #444;
+    opacity: 0.5;
+}
+
+/* Sección de contacto */
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact input, #contact textarea {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+#contact button {
+    padding: 14px;
+    background-color: #f1c40f;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: #e67e22;
+    transform: scale(1.05);
+}
